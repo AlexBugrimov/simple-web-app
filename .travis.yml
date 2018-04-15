@@ -5,6 +5,7 @@ cache:
     - $HOME/.m2
 script:
   - mvn sonar:sonar -Dsonar.organization=alexbugrimov-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=8a7ba7d1aa1cb1a823ad8844c73893d9b47f70fa
+  - mvn cobertura:cobertura
 jdk:
   - oraclejdk8
 after_success:
