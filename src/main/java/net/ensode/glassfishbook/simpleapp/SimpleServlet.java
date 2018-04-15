@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class SimpleServlet extends HttpServlet {
-    private final Logger LOGGER = Logger.getLogger(SimpleServlet.class);
+    private final Logger log = Logger.getLogger(SimpleServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
@@ -20,7 +20,7 @@ public class SimpleServlet extends HttpServlet {
             printWriter.println("If you are reading this, your application server is good to go!!!");
             printWriter.println("</h2>");
         } catch (IOException ex) {
-            LOGGER.error("Ошибка работы сервлета", ex);
+            log.error("Ошибка работы сервлета", ex);
         }
     }
 }
