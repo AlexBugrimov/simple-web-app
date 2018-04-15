@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class SimpleServlet extends HttpServlet {
-    private final static Logger LOGGER = Logger.getLogger(SimpleServlet.class);
+    private final Logger LOGGER = Logger.getLogger(SimpleServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
